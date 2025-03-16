@@ -1,0 +1,1224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+body {
+    background: #f8f6f2;
+   
+}
+
+.nav-link{
+    font-family: Chakra Petch, sans-serif;
+    font-weight: bold;
+}
+
+
+.blogs-font{
+    font-family: Berkshire Swash, serif; 
+}
+
+.font-icon{
+    font-size: 1.5em;
+}
+
+
+li{
+    list-style-type: none;
+}
+.navbar{
+
+  
+    background-color: #f1f1f1;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    min-height: 70px;
+position: relative;
+    position: fixed; 
+}
+
+
+.wid{
+    width: 90px;
+    height: 70px;
+}
+
+.abc {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    /* color: black; */
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  
+  .abc::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+   border-bottom: 2px solid #a8805a;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .abc:hover::after {
+    width: 100%;
+  }
+
+
+  .user{
+    margin-right:2em ;
+  }
+
+
+.btn {
+    background: #c39c72;
+    font-family: "Berkshire Swash", serif;
+    color: white;
+    padding: 7px 20px !important;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+/* .footer-search{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
+
+
+.btn:hover {
+    background: #a8805a;
+}
+
+/* #search-btn{
+    background-color: #c39c7200;
+    color: black;
+} */
+
+/* #search-btn:hover{
+    color: rgb(0, 128, 214);
+} */
+
+
+@media (max-width: 780px){
+ .text-div{
+    margin-top: 3em;
+}   
+}
+
+
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('https://i.pinimg.com/736x/08/8c/f6/088cf6489c3c159a7c10f33ae9d15d70.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    /* padding: 50px; */
+    margin-top: 5.3em;
+}
+
+.travel{
+    background: url('https://images.squarespace-cdn.com/content/v1/64ba44348b6a05559a816bc1/1690282971608-B4BD48EE7DOGJDWKOL52/A+Guide+to+Travel+Photography-152.jpg?format=750w')no-repeat center center/cover;
+}
+
+
+.books{
+    background: url('https://i.pinimg.com/736x/65/79/4d/65794da1ce3e5e3537a281ad6eaba286.jpg')no-repeat center center/cover;
+}
+
+.fashion{
+    background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D')no-repeat center center/cover;
+}
+
+.food{
+    background: url('https://i.pinimg.com/736x/17/72/f9/1772f9030c717438ee2e9916cc79e42a.jpg')no-repeat center center/cover;
+}
+
+
+.text {
+    max-width: 50%;
+    font-size: 24px;
+    color: black;
+    background: rgba(255, 255, 255, 0.454);
+    font-family: "Berkshire Swash", serif;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    animation: popUp 1s ease-in-out;
+    display: none;
+}
+
+@keyframes popUp {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text {
+        max-width: 90%;
+        margin-top: 3em;
+        font-size: 0.9em;
+    }
+
+  
+    .profile {
+        width: 100px;
+        height: 100px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+
+
+/* ......... .........*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+.coaching {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background: #f8f6f2;
+    border-radius: 10px;
+}
+
+.images {
+    width: 45%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+.content {
+    width: 50%;
+}
+
+.content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.points {
+    margin-bottom: 20px;
+}
+
+.point h3 {
+    font-size: 18px;
+    color: #c39c72;
+    margin-bottom: 5px;
+}
+
+.point p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    background: #c39c72;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Berkshire Swash", serif;
+}
+
+.btn:hover {
+    background: #a8805a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .coaching {
+        flex-direction: column;
+        text-align: center;
+    }
+    .images {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+/* .................. */
+
+.benefits-section {
+    text-align: center;
+    padding: 50px;
+    background: #f8f6f2;
+    border-radius: 10px;
+}
+
+.benefits-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefits-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.benefit-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #fff;
+    border: 3px solid #3f0303a7;
+    /* background-image: -webkit-linear-gradient(30deg, #c266d3 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%); */
+    background-image: -webkit-linear-gradient(30deg, #dbc4a7 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #efc2a2 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+
+.border-btnn-blog{
+    border-bottom: 4px double rgb(7, 7, 7);
+    width: 100px;
+    margin: auto;
+    color: orange;
+   
+}
+
+
+
+
+  .benefit-card:hover {
+    background-position: 100%;
+    color: #c3bbc5;
+  }
+
+.benefit-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #c39c72;
+}
+
+.benefit-text {
+    font-size: 14px;
+    color: black;
+}
+
+.benefit-card:hover, .benefit-card.active {
+    border: 2px solid #c39c72;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit-card {
+        width: 80%;
+    }
+}
+
+/* ...................... */
+
+.motivation-section {
+    background: #f8f6f2;
+    padding: 50px 10%;
+}
+
+.motivation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Berkshire Swash, serif;
+     font-size: 1em;
+      text-align: center;
+    gap: 30px;
+   
+}
+
+.motivation-card {
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.head{
+    font-family: Berkshire Swash, serif; 
+    font-size: 2em;
+}
+.motivation-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-box img {
+    width: 400px;
+    height: 260px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+
+.text-box {
+    max-width: 400px;
+}
+
+.text-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.text-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.motivation-btn {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #c39c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.motivation-btn:hover {
+    background: #a37f59;
+}
+
+/* Reverse Layout for Right Card */
+.motivation-card.right {
+    flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .motivation-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .motivation-card.right {
+        flex-direction: column;
+    }
+
+    .image-box img {
+      
+        height: auto;
+          width: 100%;
+    }
+}
+
+/* ............................. */
+
+.head-view{
+    font-family: Berkshire Swash, serif;
+}
+
+.team-section {
+    text-align: center;
+    background: #f8f6f2;
+}
+.team-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.team-section p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px ;
+}
+
+.team-card {
+    background: rgb(190, 189, 189);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+    width: 280px;
+    height: 330px;
+
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    color: #060606;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #2d2c2c;
+    margin-bottom: 5px;
+}
+
+/* Heart icon styling */
+.heart-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: #070707;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.heart-icon.active {
+    color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 80%;
+    }
+}
+
+/* ..............................CONTACT US ................. */
+
+.contact-section {
+    text-align: center;
+    padding: 145px 20px;
+    margin-top: 6em;
+    color: white;
+    background: url('https://i.pinimg.com/736x/ae/3e/57/ae3e57a041999e2467feb4e0e6c22ffe.jpg')no-repeat center center/cover;
+}
+
+.authorspan{
+    color: #f0a43b;
+}
+
+
+.contact-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(249, 247, 247);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    color: white;
+}
+
+.delay {
+    animation-delay: 0.5s;
+    color: #010101 !important;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .contact-section h1 {
+        font-size: 36px;
+    }
+}
+
+
+/* .........WRITE............ */
+
+
+/* General Reset */
+
+.custom-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #d8f4f4; */
+    background-image: url(https://i.pinimg.com/736x/b2/c8/8c/b2c88cc60c9dd46457c7aa11564f07f6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.write-span{
+    border-bottom: 4px double black;
+    margin: auto;
+  
+}
+
+.custom-form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #edf1f3 !important;
+    gap: 15px;
+  
+}
+
+
+.custom-input, .custom-textarea, .custom-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+}
+
+.custom-textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Button Styling */
+.custom-button {
+    background: #c39c72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Chakra Petch, sans-serif;
+    transition: background 0.3s;
+}
+
+.custom-button:hover {
+    background: #92683c;
+}
+
+
+.main-write{
+    min-height: 490px;
+    width: 600px;
+    background: rgb(254,168,63);
+    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+     padding: 2.6em;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .custom-form {
+        max-width: 90%;
+    }
+}
+
+/* ...................................... */
+
+
+
+/* Contact Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+     background-color: #dcf2f4;
+
+}
+
+/* Info Card Styling */
+.info-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.info-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Different Card Colors */
+.dark-card {
+    background: #c39c72;
+    color: rgb(3, 3, 3);
+}
+
+.medium-card {
+   
+    background: #e8caab;
+    color: black;
+}
+
+.light-card {
+    background-color: white;
+    color: black;
+    border: 1px solid #e0e0e0;
+}
+
+/* Hover Animation */
+.info-card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* READMPRE PAGE.................. */
+
+
+.read-more-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-title {
+    font-size: 28px;
+    color: #333;
+}
+
+.blog-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.blog-content {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+    padding: 0 20px;
+}
+
+
+
+a.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Button color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    text-align: center;
+}
+
+a.back-button:hover {
+    background-color: #ffaa00; /* Hover effect */
+}
+
+
+
+/* ..............PORFILE-PAGE CSS */
+
+
+
+.profile-card {
+    /* background: rgb(164, 59, 59); */
+    /* background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+    background: rgb(254,168,63);
+    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+    border-radius: 10px;
+    width: 380px;
+    border: 2px solid black;
+
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #f0efed;
+}
+
+
+/* login-btn-color */
+
+.color-sub{
+    background-color: rgb(0, 134, 161);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+}
+
+.color-sub:hover{
+    background-color: #676666;
+}
+
+.color-con{
+    background-color:rgb(228, 180, 220);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.color-con:hover{
+    background-color: #676666;
+}
+
+
+/* dashbord page */
+
+.blue{
+    background-color:rgb(101, 101, 233); 
+}
+
+.red{
+    background-color: red;
+}
+
+
+
+input{
+    text-indent: 15px;
+}
+
+
+/* ......................profile page  input..................*/
+
+.current-input{
+    border: none;
+    width: 260px;
+    height: 34px;
+  border-radius: 7px;
+  border: 2px solid rgb(192, 167, 26);
+}
+
+.add , .userIcon{
+    display: none;
+}
+
+/* SEARCH-FILTER..CSS.. */
+
+
+.border-btn{
+    border-bottom: 4px double black;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.filter-span{
+    color: #e98a1d;
+}
+
+
+.form-select{
+    background-color: #e98a1d;
+    height: 45px;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.sear-input{
+    margin-bottom: 1em;
+}
+
+.card{
+    margin-bottom: 1em;
+   
+}
+
+
+.abc-font{
+    font-family: Chakra Petch, sans-serif !important;
+
+}
+
+/* ................- fOOTER */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* Footer Styling */
+footer {
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    /* margin: 20px auto; */
+    text-align: center;
+    margin-top: 2em;
+}
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.footer-left .logo {
+    width: 120px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+
+
+/* Icons */
+.footer-icons {
+    display: flex;
+    align-items: center;
+  
+}
+
+
+
+.footer-icons i:hover {
+    transform: scale(1.2);
+   
+}
+
+
+.footer-nav {
+    margin-top: 10px;
+    
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0; 
+    margin-top: 2em;
+    margin-left: 6em;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+   
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    gap: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.red{
+    
+        background: linear-gradient(45deg, #ff0000, #ff7300, #ff0000); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2em !important; 
+        
+    }
+
+.blue{
+     color: rgb(93, 93, 235) !important; 
+    background: linear-gradient(45deg, #0077b5, #004182); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em !important; 
+   
+}
+
+.pink{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em !important; 
+}
+
+
+.footer-nav ul li a:hover {
+    color: #ae9362;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-search {
+        margin: 10px 0;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+
+    .footer-nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .footer-nav ul{
+        margin-left: 0;
+    }
+}
+
+
+.para{
+    border-top: 1px solid black;
+    padding-top: 20px;
+    font-family: "Pacifico", cursive;
+    color: #7a7979;
+}
+
+/* ........Footer-ICONS-CODE */
+
+.footer-icons {
+    display: flex;
+   
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #d3bb8f;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: popIn 0.5s ease-out forwards;
+}
+
+.footer-icon i {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon{
+      text-decoration: none;
+}
+
+/* Hover Effects */
+.footer-icon:hover {
+    /* background: linear-gradient(45deg, #ff6b6b, #ff4757); */
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+
+    transform: scale(1.2);
+    color: white !important;
+}
+
+.footer-icon:hover i {
+    animation: vibrate 0.3s ease-in-out infinite;
+}
+
+/* Glowing Border Effect */
+.footer-icon::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon:hover::before {
+    transform: scale(1.3);
+    color: white;
+}
+
+/* Keyframe Animations */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* pagenation styling */
+
+.pagination{
+    display: flex;
+    align-items: end;
+    justify-self: end;
+    margin-top: 2em;
+}
+
+.bg-color{
+    background-color: #f4a60b !important;
+    color: rgb(8, 8, 8) !important;
+}

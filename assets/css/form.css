@@ -1,0 +1,26 @@
+
+.form-label{
+font-weight: 400;
+}
+
+.form-text{
+    color: rgb(46, 46, 46);
+}
+
+form , .main-write{
+    background: rgb(254,168,63);
+    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+}
+
+.sig-span{
+    color: black;
+    
+   
+} 
+
+.border-btnn{
+    border-bottom: 4px double rgb(7, 7, 7);
+    width: 100px;
+    margin: auto;
+    font-family: Berkshire Swash, serif; 
+}
