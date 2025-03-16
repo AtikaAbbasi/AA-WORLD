@@ -55,11 +55,7 @@ function displayBlogs() {
                     <h2 class="head">${card.topic}</h2>
                     <h3 class="head">${card.category}</h3>
                     <p>${card.text.substring(0, 100)}...</p>
-                    <a href="./assets/html/readmore.html?id=${card.id}">
-                        <button class="motivation-btn" style="font-family: Berkshire Swash, serif;">
-                            Read More
-                        </button>
-                    </a>
+                  
                     <i class="far fa-heart heart-icon" data-id="${card.id}" style="cursor:pointer;"></i>
                 </div>
             </div>
