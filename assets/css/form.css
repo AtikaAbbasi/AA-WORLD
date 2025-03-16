@@ -9,7 +9,12 @@ font-weight: 400;
 
 form , .main-write{
     background: rgb(254,168,63);
+  
     background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+}
+
+.main-write{
+    width: 300px;
 }
 
 .sig-span{
@@ -24,3 +29,6 @@ form , .main-write{
     margin: auto;
     font-family: Berkshire Swash, serif; 
 }
+
+
+

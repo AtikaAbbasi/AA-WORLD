@@ -650,7 +650,6 @@ position: relative;
 
 /* .........WRITE............ */
 
-
 /* General Reset */
 
 .custom-form-container {
@@ -995,7 +994,9 @@ footer {
     width: 100%;
     /* margin: 20px auto; */
     text-align: center;
+ 
     margin-top: 2em;
+    
 }
 /* Footer Container */
 .footer-container {
@@ -1221,4 +1222,116 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 .bg-color{
     background-color: #f4a60b !important;
     color: rgb(8, 8, 8) !important;
+}
+
+/* FORM LOGIN MEDEA QURES 😊 */
+
+.widinput{
+    width: 270px;
+}
+
+#log-form{
+    width: 350px !important;
+}
+
+
+@media (max-width: 380px){
+    #log-form{
+        width: 300px !important;
+    }
+
+    .widinput{
+        width: 230px;
+    }
+}
+
+
+/* FORM SIGIN MEDEA QURES 😊 */
+
+
+
+.widinput{
+    width: 270px;
+}
+
+#signup-form{
+    width: 350px !important;
+}
+
+
+
+@media (max-width: 380px){
+    #signup-form{
+        width: 300px !important;
+    }
+
+    .widinput{
+        width: 230px;
+    }
+  
+}
+
+/* WRITE MEDAI QUREAS 🙄 */
+
+.wid-box{
+    width: 280px !important;
+   margin-left: -0.8em;
+}
+
+.widinput{
+    width: 270px;
+}
+
+#opt{
+    background-color: orange;
+}
+.custom-form{
+    width:350px!important;
+}
+
+form,.main-write{
+    width: 400px;
+}
+
+
+@media (max-width: 430px){
+    .custom-form{
+        width: 300px !important;
+    }
+
+
+    .hightt{
+        height: 60px !important;
+        
+    }
+
+    form,.main-write{
+        width: 360px;
+    }
+
+    .widinput{
+        width: 230px;
+       
+    }
+  
+  
+    #image{
+        width: 180px;
+    }
+}
+
+@media (max-width: 388px){
+    form,.main-write{
+        width: 320px;
+    }
+}
+
+
+
+.box-imgg{
+    background-image: url(https://i.pinimg.com/736x/b2/2a/8f/b22a8fd038a8d17b3a64e1505c74e6c4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 80w !important;
+     margin-bottom: 3em !important;
 }
