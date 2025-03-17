@@ -80,7 +80,7 @@ console.log(user.uid);
         isActive : true,
        });
 
-      alert("Document written with ID: ", docRef);
+      alert("Signed In  ✔");
       
 
 

@@ -741,7 +741,7 @@ position: relative;
     gap: 20px;
     padding: 50px;
     flex-wrap: wrap;
-     background-color: #dcf2f4;
+     /* background-color: #ffffff; */
 
 }
 
@@ -749,7 +749,7 @@ position: relative;
 .info-card {
     width: 300px;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -1329,7 +1329,7 @@ form,.main-write{
 
 
 .box-imgg{
-    background-image: url(https://i.pinimg.com/736x/b2/2a/8f/b22a8fd038a8d17b3a64e1505c74e6c4.jpg);
+    background-image: url(https://i.pinimg.com/736x/ff/b2/5d/ffb25da9cf635395623c7b83e0d33d2c.jpg);
     background-repeat: no-repeat;
     background-size: cover;
    height: 80w !important;

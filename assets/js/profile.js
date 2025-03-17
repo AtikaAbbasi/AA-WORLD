@@ -9,7 +9,7 @@ _signout.addEventListener('click' , () => {
 
     signOut(auth)
 
-    alert("out")
+    alert("Logout")
 });
 
 

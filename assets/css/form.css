@@ -8,20 +8,21 @@ font-weight: 400;
 }
 
 form , .main-write{
-    background: rgb(254,168,63);
-  
-    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+    /* background: rgb(254,168,63);
+   */
+    /* background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important; */
 }
 
-.main-write{
-    width: 300px;
-}
+
 
 .sig-span{
     color: black;
     
-   
 } 
+
+.width-input-con{
+    width: 400px;
+}
 
 .border-btnn{
     border-bottom: 4px double rgb(7, 7, 7);
@@ -31,4 +32,74 @@ form , .main-write{
 }
 
 
+@media(max-width:490px){
+    .width-input-con{
+        width: 340px;
+    }
+}
 
+
+
+@media(max-width:441px){
+    .width-input-con{
+        width: 300px;
+    }
+}
+
+
+@media(max-width:401px){
+    .width-input-con{
+        width: 300px;
+        margin-left: -0.2em !important;
+    }
+}
+
+
+@media(max-width:367px){
+    .main-write{
+        width: 330px !important;
+    }
+
+    .width-input-con{
+        /* width: 300px; */
+        margin-left: -0.9em !important;
+        
+    }
+    .dark-card{
+           width: 230px !important; 
+    }
+
+    .medium-card{
+        width: 230px !important; 
+    }
+
+    .light-card{
+        width: 230px !important; 
+    }
+}
+
+/* contact card medai  */
+
+
+.dark-card{
+    background-color: rgb(255, 255, 255) !important;
+    height: 260px;
+    
+}
+
+.medium-card{
+    background-color: orange !important;
+    color: aliceblue;
+}
+
+.bor-line{
+    border-bottom: 2px double orange;
+    width: 195px;
+    margin: auto;
+}
+
+.bor-line-black{
+    border-bottom: 2px double rgb(5, 5, 5);
+    width: 198px;
+    margin: auto;
+}
