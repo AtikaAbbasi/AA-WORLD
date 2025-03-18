@@ -2,13 +2,13 @@ import { db, collection, query, where, getDocs } from "../../config.js"
 
 const blogContainer = document.querySelector(".motivation-container"); 
 
-// Function to fetch and display blogs of Travel category
+
 async function fetchTravelBlogs() {
     try {
-        const q = query(collection(db, "blogs"), where("category", "==", "travel")); // Sirf Travel category ke blogs magwao
+        const q = query(collection(db, "blogs"), where("category", "==", "travel")); 
         const querySnapshot = await getDocs(q);
         
-        blogContainer.innerHTML = ""; // Purana content clear karein
+        blogContainer.innerHTML = ""; 
 
         if (querySnapshot.empty) {
             blogContainer.innerHTML = "<p>No travel blogs found.</p>";

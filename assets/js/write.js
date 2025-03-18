@@ -18,7 +18,7 @@ let topic = document.getElementById("topic").value ;
 let option = document.getElementById("opt").value ;
 let text = document.getElementById("blogtext").value ;
 
-//image  //cloudinary
+//......................image  //cloudinary..............................
 
 let file = document.getElementById('image')
 let img = file.files[0]

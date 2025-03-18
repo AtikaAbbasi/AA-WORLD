@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// SEARCH--FILTER //
+// .....................SEARCH--FILTER...................... //
 
 
 
 
-// JavaScript for Search & Filter -->
+
 document?.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
     const categoryFilter = document.getElementById("categoryFilter");

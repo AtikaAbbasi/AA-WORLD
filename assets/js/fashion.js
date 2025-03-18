@@ -1,6 +1,4 @@
 
-
-
 import { db, collection, query, where, getDocs } from "../../config.js"
 
 const blogContainer = document.querySelector(".motivation-container"); 

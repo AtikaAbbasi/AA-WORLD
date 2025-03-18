@@ -1,9 +1,5 @@
 
 
-
-
-// //wishlist
-
 import { 
     db,
     updateDoc,
@@ -31,12 +27,12 @@ let Allblogs = () => {
         });
 
         displayBlogs();
-        displayWishlist();  // Wishlist bhi update hogi
+        displayWishlist();  
     });
 };
 
 
-// *Blogs ko Display Karna*
+
 function displayBlogs() {
     let cards = document.getElementById("blogs-cards");
     cards.innerHTML = "";
@@ -67,7 +63,7 @@ function displayBlogs() {
 }
 
 
-// *Wishlist Fetch & Display Karna*
+// *..............Wishlist Fetch & Display Karna.....*
 async function displayWishlist() {
     const teamContainer = document.querySelector(".team-container");
     teamContainer.innerHTML = "";
@@ -80,7 +76,7 @@ async function displayWishlist() {
             wishlistBlogs.push({ id: doc.id, ...doc.data() });
         });
 
-        // Randomly select 5 blogs
+        // ..................Randomly select 5 blogs..................
         wishlistBlogs = shuffleArray(wishlistBlogs).slice(0, 4);
 
         wishlistBlogs.forEach((blog) => {
@@ -104,13 +100,13 @@ async function displayWishlist() {
 }
 
 
-// *Random Shuffle Function*
+// *.....................Random Shuffle Function.................*
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
 
-// *Like Button Functionality*
+//................ Like Button Functionality..................
 function setupLikeButtons() {
     document.querySelectorAll(".heart-icon").forEach((icon) => {
         icon.addEventListener("click", function () {
@@ -175,5 +171,5 @@ document.getElementById("nextBtn").addEventListener("click", () => {
 });
 
 
-// *Init Functions*
+
 Allblogs();

@@ -2,7 +2,7 @@
 
 import { db, collection, getDocs } from "../../config.js";
 
-// Firebase se sab blogs laane ka function
+
 async function fetchAllBlogs() {
     let blogCollection = collection(db, 'blogs');
     let querySnapshot = await getDocs(blogCollection);
@@ -46,6 +46,7 @@ async function searchBlogs() {
 }
 
 // Function to display filtered blogs
+
 function displayFilteredBlogs(filteredBlogs) {
     let blogContainer = document.getElementById('blogContainer');
     blogContainer.innerHTML = "";
@@ -65,6 +66,6 @@ function displayFilteredBlogs(filteredBlogs) {
     });
 }
 
-// Event listeners for search input and category filter
+
 document.getElementById("searchInput").addEventListener("input", searchBlogs);
 document.getElementById("categoryFilter").addEventListener("change", searchBlogs);
