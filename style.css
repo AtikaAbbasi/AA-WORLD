@@ -89,23 +89,13 @@ position: relative;
    
 }
 
-/* .footer-search{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} */
 
 
 .btn:hover {
     background: #a8805a;
 }
 
-/* #search-btn{
-    background-color: #c39c7200;
-    color: black;
-} */
 
-/* #search-btn:hover{
-    color: rgb(0, 128, 214);
-} */
 
 
 @media (max-width: 780px){
@@ -129,7 +119,7 @@ position: relative;
 }
 
 .travel{
-    background: url('https://images.squarespace-cdn.com/content/v1/64ba44348b6a05559a816bc1/1690282971608-B4BD48EE7DOGJDWKOL52/A+Guide+to+Travel+Photography-152.jpg?format=750w')no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/87/59/b8/8759b888ccfe690f9cb1ba693474509a.jpg')no-repeat center center/cover;
 }
 
 
@@ -650,7 +640,6 @@ position: relative;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
     background-image: url(https://i.pinimg.com/736x/ff/b2/5d/ffb25da9cf635395623c7b83e0d33d2c.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -663,6 +652,8 @@ position: relative;
     margin: auto;
   
 }
+
+
 
 .custom-form {
     width: 100%;
@@ -733,7 +724,7 @@ position: relative;
     gap: 20px;
     padding: 50px;
     flex-wrap: wrap;
-     /* background-color: #ffffff; */
+    
 
 }
 
@@ -786,7 +777,7 @@ position: relative;
 
 /* READMPRE PAGE.................. */
 
-
+/* 
 .read-more-container {
     max-width: 800px;
     margin: 50px auto;
@@ -796,8 +787,8 @@ position: relative;
     border-radius: 10px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
-}
-
+} */
+/* 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -807,7 +798,7 @@ position: relative;
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 .blog-title {
     font-size: 28px;
@@ -839,10 +830,10 @@ position: relative;
 a.back-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00; /* Button color */
-    color: #000; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #ffcc00; 
+    color: #000; 
+    text-decoration: none; 
+    border-radius: 5px; 
     font-weight: bold;
     text-align: center;
 }
@@ -864,10 +855,6 @@ a.back-button:hover {
 }
 
 .profile-card {
-    /* background: rgb(164, 59, 59); */
-    /* background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-  
     border-radius: 10px;
     width: 380px;
     border: 2px solid black;
@@ -1331,4 +1318,15 @@ form,.main-write{
     background-size: cover;
    height: 80w !important;
      margin-bottom: 3em !important;
+}
+/*....... write media ....... */
+
+@media (max-width: 477px){
+    .write-wid{
+        margin-left: 2.5em !important;
+    }
+
+    .in-wid{
+      margin-left: 0.2em !important;
+    }
 }
