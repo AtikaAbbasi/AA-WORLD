@@ -200,12 +200,7 @@ position: relative;
 
 /* ......... .........*/
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-} */
+
 
 .coaching {
     display: flex;
@@ -341,8 +336,6 @@ position: relative;
 
     color: #fff;
     border: 3px solid #3f0303a7;
-    /* background-image: -webkit-linear-gradient(30deg, #c266d3 50%, transparent 50%);
-    background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%); */
     background-image: -webkit-linear-gradient(30deg, #dbc4a7 50%, transparent 50%);
     background-image: linear-gradient(30deg, #efc2a2 50%, transparent 50%);
     background-size: 500px;
@@ -473,7 +466,7 @@ position: relative;
     background: #a37f59;
 }
 
-/* Reverse Layout for Right Card */
+
 .motivation-card.right {
     flex-direction: row-reverse;
 }
@@ -657,10 +650,11 @@ position: relative;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #d8f4f4; */
-    background-image: url(https://i.pinimg.com/736x/b2/c8/8c/b2c88cc60c9dd46457c7aa11564f07f6.jpg);
+
+    background-image: url(https://i.pinimg.com/736x/ff/b2/5d/ffb25da9cf635395623c7b83e0d33d2c.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
+
    
 }
 
@@ -713,8 +707,6 @@ position: relative;
 .main-write{
     min-height: 490px;
     width: 600px;
-    background: rgb(254,168,63);
-    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
      padding: 2.6em;
     border-radius: 20px;
     border: 2px solid black;
@@ -863,14 +855,19 @@ a.back-button:hover {
 
 /* ..............PORFILE-PAGE CSS */
 
-
+.main-con{
+    background-image: url(https://i.pinimg.com/736x/ff/b2/5d/ffb25da9cf635395623c7b83e0d33d2c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh;
+ 
+}
 
 .profile-card {
     /* background: rgb(164, 59, 59); */
     /* background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-    background: rgb(254,168,63);
-    background: linear-gradient(90deg, rgba(254,168,63,1) 0%, rgba(255,230,195,1) 100%)!important;
+  
     border-radius: 10px;
     width: 380px;
     border: 2px solid black;
