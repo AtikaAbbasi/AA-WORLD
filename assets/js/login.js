@@ -22,7 +22,7 @@ try {
     let userCredintial = await signInWithEmailAndPassword(auth, email, pass );
     let user = userCredintial?.user;
     if (user) {
-        window.location.pathname  = '../../index.html'
+        window.location.replace("/index.html")
     }
     
       console.log(user)

@@ -50,7 +50,7 @@ onAuthStateChanged(auth, async (user) => {
             if(email) email.innerHTML = loguser.email
             if(age) age.innerHTML = loguser.age
             if(proimg) proimg.src = loguser.showimg
-
+                             
             
         } else {
             console.log('no match found');
